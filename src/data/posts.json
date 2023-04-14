@@ -1,0 +1,17 @@
+[
+  {
+    "id": "test-post",
+    "title": "This is a post!",
+    "markdown": "test_post.md",
+    "links": [
+      {
+        "name": "Example.com",
+        "url": "https://www.example.com"
+      }
+    ],
+    "date": "04/13/2023",
+    "topics": [
+      "Test"
+    ]
+  }
+]

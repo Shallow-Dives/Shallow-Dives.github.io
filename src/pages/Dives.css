@@ -1,0 +1,52 @@
+.library-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.library-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.library-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--l-gray);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--d-font);
+  text-decoration: none;
+}
+
+.library-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.library-card:hover {
+  transform: scale(1.1);
+}
+
+.library-card:hover .library-card-title {
+  color: var(--purple);
+}
+
+@media (max-width: 600px) {
+  .library-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
