@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
-import posts from "../data/posts.json";
+
 import "./Post.css";
+
+import posts from "../data/logs.json";
 
 const Post = () => {
   const { postId } = useParams();

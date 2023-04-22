@@ -8,21 +8,32 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar__brand">
         <Link to="/" className="navbar__link">
-          <span className="navbar__title">Shallow Dives</span>
+          <span className="navbar__title">~\~~ <span className="navbar__title-text">Shallow Dives</span></span>
         </Link>
       </div>
       <ul className="navbar__links">
+        <li>
+          <Link to="/about" className="navbar__link">
+            About
+          </Link>
+        </li>
         <li>
           <Link to="/dives" className="navbar__link">
             Dives
           </Link>
         </li>
           <li>
-          <Link to="/library" className="navbar__link">
-            Log
+          <Link to="/logs" className="navbar__link">
+            Logs
+          </Link>
+        </li>
+        <li>
+          <Link to="/me" className="navbar__link">
+            Me
           </Link>
         </li>
       </ul>
+      <button class="toggle">&#8702;</button>
     </nav>
   );
 }

@@ -3,24 +3,19 @@ import React from "react";
 import "./Home.css";
 import "../components/Explainer.css"
 
-import Dives from "./Dives.js";
-import Logs from "./Logs.js";
-import TopicsData from "../data/topics.json";
-import DivesData from "../data/dives.json";
+import Topics from "../data/topics.json";
+import Dives from "../data/dives.json";
 
-function Home() {
-
+function About() {
   return (
     <div className="home__container">
       <div className="explainer">
-        <h1>Shallow Dives</h1>
-        <h3>What is this place?</h3>
-        <p>Shallow Dives is a library of interactive learning materials enabling project builds, where developers can
-         dive into technical topics presented in a range educational experience formats. This site combines my personal
-         explorations into new technical topics with my research into presenting educational content in creative and
-         effective ways.</p>
-
-        <a className="home__button" href="/dives" role="button">Dive In &nbsp; &#8702;</a>
+        <h1>About</h1>
+        <h3>What is Shallow Dives?</h3>
+        <p>Shallow Dives is a library of interactive learning materials, where developers can dive into
+        technical topics presented in a range educational experience formats. The project combines my
+        personal explorations into new technical topics with my research into presenting educational content in creative
+        and effective ways.</p>
 
         <h3>Dive Design</h3>
         <p>Each dive is presented as a development experience for new learners. The full
@@ -29,7 +24,7 @@ function Home() {
         The current list of dive formats includes</p>
 
         <div className="tags">
-          {DivesData.dives.map((item) => (
+          {Dives.dives.map((item) => (
                   <div className="explainer__tag">
                     {item}
                   </div>
@@ -41,7 +36,7 @@ function Home() {
         current list of project tags includes</p>
 
         <div className="tags">
-          {TopicsData.topics.map((item) => (
+          {Topics.topics.map((item) => (
                   <div className="explainer__tag">
                     {item}
                   </div>
@@ -56,11 +51,10 @@ function Home() {
           <li>Evaluate these learning materials against similar work.</li>
           <li>Explore innovative ways to present technical educational materials online.</li>
         </ul>
+
       </div>
-      <Dives />
-      <Logs />
     </div>
   );
 }
 
-export default Home;
+export default About;
