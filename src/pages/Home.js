@@ -15,10 +15,10 @@ function Home() {
       <div className="explainer">
         <h1>Shallow Dives</h1>
         <h3>What is this place?</h3>
-        <p>Shallow Dives is a library of interactive learning materials enabling project builds, where developers can
-         dive into technical topics presented in a range educational experience formats. This site combines my personal
-         explorations into new technical topics with my research into presenting educational content in creative and
-         effective ways.</p>
+        <p>Shallow Dives is a library of interactive learning materials enabling exciting project builds, where
+        developers can dive into technical topics presented in a range educational experience formats. This project
+        combines explorations into new development spaces with research into presenting educational content in creative
+        and effective ways.</p>
 
         <a className="home__button" href="/dives" role="button">Dive In &nbsp; &#8702;</a>
 
