@@ -25,7 +25,7 @@ For more information about the Shallow Dives project, see the [organization's in
 **Up Next**
 - [ ] Generate project icons
 - [ ] Bug: Finish mobile menu and layout
-- [ ] Projects timeline page and dive status tags
+- [ ] Add dive status tags
 
 </details>
 

@@ -1,5 +1,6 @@
 .navbar {
-  background-color: var(--green);
+  background-color: var(--l-gray);
+  box-shadow: 0 0.5rem 0.5rem -0.5rem var(--green);
   display: flex;
   justify-content: center;
   align-items: center;
